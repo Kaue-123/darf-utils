@@ -1,0 +1,15 @@
+[project]
+name = "darf-utils"
+version = "1.0.0"
+description = "Renomeia em lote guias DAS do Simples Nacional a partir dos dados do PDF"
+requires-python = ">=3.10"
+dependencies = ["PyMuPDF>=1.24"]
+
+[project.scripts]
+darf-utils = "darf_utils.app:run"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
